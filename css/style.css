@@ -1,0 +1,66 @@
+div.meter {
+  position: relative;
+  width: 250px;
+  height: 25px;
+  border: 1px solid #b0b0b0;
+  margin-top: 50px;
+  /* viewing purposes */
+  margin-left: 100px;
+  /* viewing purposes */
+  -webkit-box-shadow: inset 0 3px 5px 0 #d3d0d0;
+  -moz-box-shadow: inset 0 3px 5px 0 #d3d0d0;
+  box-shadow: inset 0 3px 5px 0 #d3d0d0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+div.meter .bar {
+  display: block;
+  height: 100%;
+  width: 0%; /* initial state of the bar */
+  position: relative;
+  top: -1px;
+  left: -1px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid #3c84ad;
+  background: #6eb2d1;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, rgba(255, 255, 255, 0.2)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.2)), color-stop(0.75, rgba(255, 255, 255, 0.2)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+  background-image: -ms-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+  -webkit-background-size: 45px 45px;
+  -moz-background-size: 45px 45px;
+  -o-background-size: 45px 45px;
+  background-size: 45px 45px;
+}
+/* glossy effect */
+div.meter .bar:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 50%;
+  position: relative;
+  top: 50%;
+  background: rgba(0, 0, 0, 0.03);
+}
+div.meter .percents {
+  position: absolute;
+  top: 0;
+  margin: 0 10px;
+  line-height: 25px;
+  font-family: 'Helvetica';
+  font-weight: bold;
+  font-size: 15px;
+  color: #333;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.6);
+}
